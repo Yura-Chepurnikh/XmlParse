@@ -1,5 +1,4 @@
 #include "./syntax_token.hpp"
-
 #include <iostream>
 #include <string>
 
@@ -11,5 +10,5 @@ public:
     Lexer(const std::string& text);
     char GetCurrentChar();
     inline void Next();
-    const SyntaxToken NextToken();
+    SyntaxToken NextToken();
 };

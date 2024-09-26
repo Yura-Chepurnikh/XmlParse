@@ -6,8 +6,13 @@ enum class SyntaxKind {
     COMMENT,
     DOUBLE_MARKS,
     APOS,
-    ELEMENT,
+    ALNUM,
     ATTRIBUTE,
     EQUAL,
     BINARY_EXPRESSION,
+    EOF_TOKEN,
+    UNKNOWN_TYPE,
+    SLASH,
 };
+
+std::ostream& operator<<(std::ostream& stream, SyntaxKind& kind);

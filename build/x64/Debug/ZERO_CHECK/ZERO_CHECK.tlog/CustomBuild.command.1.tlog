@@ -1,0 +1,10 @@
+^D:\XMLPARSE\BUILD\CMAKEFILES\28485AEFF0C7AEA125C62F90B5153817\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SD:/XmlParse -BD:/XmlParse/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/XmlParse/build/XmlParse.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
