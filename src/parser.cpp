@@ -1,12 +1,6 @@
 #include "../inc/parser.hpp"
 using namespace std;
 
-// Parser(const std::string& text);
-
-//     inline void Next();
-//     SyntaxToken NextToken();
-//     auto Parse();
-
 Parser::Parser(const std::string& text) : text(text)
 {
     Lexer* lexer = new Lexer(text);
@@ -27,12 +21,19 @@ Parser::Parser(const std::string& text) : text(text)
     delete lexer;
 }
 
-// void Parser::Next() { ++position; }
+void Parser::Next() { ++position; }
 
-// SyntaxToken Parser::NextToken() {
+SyntaxToken Parser::Peek(int offset) {
+    int pos = position + offset;
+    if (pos >= tokens.size())
+        return tokens[tokens.size() - 1];
+    return tokens[pos];
+}
 
-// }
+SyntaxToken Parser::GetCurrentToken() {
+    return Peek(0);
+}
 
-// auto Parser::Parse() {
-
-// }
+auto Parser::Parse() {
+    
+}

@@ -16,6 +16,7 @@ public:
     Parser(const std::string& text);
 
     inline void Next();
-    SyntaxToken NextToken();
+    SyntaxToken GetCurrentToken();
+    SyntaxToken Peek(int offset);
     auto Parse();
 };
