@@ -34,6 +34,6 @@ SyntaxToken Parser::GetCurrentToken() {
     return Peek(0);
 }
 
-auto Parser::Parse() {
-    
+auto Parser::Parse() {  
+
 }
