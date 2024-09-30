@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 
 enum class SyntaxKind {
@@ -12,6 +14,7 @@ enum class SyntaxKind {
     BINARY_EXPRESSION,
     EOF_TOKEN,
     UNKNOWN_TYPE,
+    WHITE_SPACE, 
     SLASH,
 };
 

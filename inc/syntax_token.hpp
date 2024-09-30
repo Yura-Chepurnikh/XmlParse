@@ -1,7 +1,8 @@
+#pragma once
+
 #include "./syntax_kind.hpp"
 #include <iostream>
 #include <string>
-
 
 struct SyntaxToken {
     int position;

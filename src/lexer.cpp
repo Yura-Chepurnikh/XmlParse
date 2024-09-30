@@ -36,7 +36,7 @@ SyntaxToken Lexer::NextToken() {
 
         int len = position - start;
         std::string str = text.substr(start, len);
-        return SyntaxToken(start, str, SyntaxKind::ALNUM);
+        return SyntaxToken(start, str, SyntaxKind::WHITE_SPACE);
     }
 
     char currentChar = GetCurrentChar();

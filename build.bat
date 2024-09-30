@@ -1,12 +1,11 @@
-if exist "build" (
-    rmdir /s /q "build"
+if not exist "build" (
+    mkdir build
 )
 
-mkdir build 
 cd build
 
 cmake ..
-cmake --build .
+cmake --build . --parallel 4
 
 /Debug/app
 

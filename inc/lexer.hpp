@@ -1,3 +1,5 @@
+#pragma once
+
 #include "./syntax_token.hpp"
 #include <iostream>
 #include <string>
