@@ -35,5 +35,5 @@ SyntaxToken Parser::GetCurrentToken() {
 }
 
 auto Parser::Parse() {  
-
+    
 }
