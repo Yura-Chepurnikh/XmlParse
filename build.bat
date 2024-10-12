@@ -1,13 +1,3 @@
-if not exist "build" (
-    mkdir build
-)
+@echo off
 
-cd build
-
-cmake ..
-cmake --build . --parallel 4
-
-/Debug/app
-
-cd D:\XmlParse\build\Debug
-app.exe
+g++ -o .\build\out.exe .\src\main.cpp

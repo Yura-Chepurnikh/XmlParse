@@ -2,10 +2,16 @@
 #include <iostream>
 #include <string>
 #include <utility>
-#include <vcruntime.h>
 using namespace std;
 
 int main() {
     
+    while (true) {
+        string input;
+        getline(cin, input);
+
+        Parser parser(input);
+    }
+
     return 0;
 }
