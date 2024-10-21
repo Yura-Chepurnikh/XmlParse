@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-Parser::Parser(const std::string& text) : text(text)
+Parser::Parser(const std::string& text) : text(text), position(0)
 {
     Lexer* lexer = new Lexer(text);
 

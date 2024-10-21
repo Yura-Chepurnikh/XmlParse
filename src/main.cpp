@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    Parser parser("<roots><root1><child1><child2><child3></child3><child4></child4><child5></child5></child2></child1></root1><root1><child1><child2><child3></child3><child4></child4><child5></child5></child2></child1></root1></roots>");
-    parser.Parse();
+    const string str = "asd"; 
+    Parser parser(str);
     return 0;
 }
