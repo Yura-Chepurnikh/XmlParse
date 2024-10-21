@@ -36,6 +36,7 @@ SyntaxToken Parser::GetCurrentToken() {
     return Peek(0);
 }
 
+
 void Parser::Parse() {
     Node* global_root = new Node(tokens[0].text);
     Node* current_root = global_root;
